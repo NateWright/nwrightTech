@@ -1,8 +1,12 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.{html,ts}']
+  },
+  darkMode: 'media', // or 'media' or 'class'
   content: [
     "./src/**/*.{html,ts}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
